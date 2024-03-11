@@ -5,7 +5,7 @@ import { View, Text, TouchableOpacity, ActivityIndicator } from "react-native";
 import styles from "./nearbyjobs.style";
 import { COLORS } from "../../../constants";
 import NearbyJobCard from "../../common/cards/nearby/NearbyJobCard";
-import useFetch from "../../../hook/useFetch";
+import useFetch from "../../../hooks/useFetch";
 
 const Nearbyjobs = () => {
   const router = useRouter();
@@ -13,6 +13,8 @@ const Nearbyjobs = () => {
     query: "React Native developer",
     num_pages: "1",
   });
+  // const isLoading = false;
+  // const error = false;
 
   return (
     <View style={styles.container}>
